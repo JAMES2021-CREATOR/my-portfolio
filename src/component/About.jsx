@@ -5,7 +5,7 @@ export default function About() {
       className="bg-white px-6 md:px-16 py-24 grid md:grid-cols-2 gap-16 items-center"
     >
       {/* IMAGE SIDE */}
-      <div className="relative flex justify-center animate-[fadeInUp_1s_ease]">
+      <div className="relative flex justify-center animate-[fadeInUp_1s_ease] ">
         <div className="w-full max-w-md aspect-[4/5] bg-[#f5e6d3] border-2 border-[#e8c9a0] rounded-3xl flex items-center justify-center relative shadow-lg hover:scale-105 transition duration-300">
           <span className="text-6xl font-bold text-[#d4a574]">DJO</span>
 
