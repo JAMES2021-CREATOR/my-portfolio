@@ -7,6 +7,7 @@ import About from './component/About.jsx'
 import Skills from './component/Skills.jsx'
 import Projects from './component/Projects.jsx'
 import Contact from './component/Contact.jsx'
+import Footer from './component/Footer.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
     <Skills />
     <Projects />
     <Contact />
+    <Footer />
     </>
   )
 }
