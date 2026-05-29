@@ -18,7 +18,7 @@ const projects = [
   {
     title: "Empire-strategist",
     type: "Web App",
-    label: "SaaS",
+    label: "Empire-strategist",
     desc: "A productivity dashboard with drag-and-drop task management and real-time collaboration.",
     techs: ["React", "Redux", "Socket.io"],
     gradient: "from-[#7d5228] to-[#5e3b1a]",
@@ -29,7 +29,7 @@ const projects = [
   {
     title: "Alma Mater college",
     type: "Website",
-    label: "Landing",
+    label: "school website",
     desc: "A premium agency website with smooth animations, parallax scrolling and CMS integration.",
     techs: ["Next.js", "Framer Motion", "Sanity CMS"],
     gradient: "from-[#e8c9a0] to-[#d4a574]",
@@ -40,7 +40,7 @@ const projects = [
   {
     title: "Gym center",
     type: "Mobile-First",
-    label: "FinTech",
+    label: "Gym house",
     desc: "A finance tracker with charts, budgeting system and responsive mobile-first experience.",
     techs: ["React", "Chart.js", "Firebase", "SCSS", "PWA"],
     gradient: "from-[#5e3b1a] to-[#3e2610]",
