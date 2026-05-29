@@ -8,58 +8,46 @@ const projects = [
     type: "Featured Project",
     label: "E-Commerce",
     desc: "A fully responsive online store with cart management, Stripe payments, product filtering, and admin dashboard functionality.",
-    techs: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind",
-      "Stripe API",
-      "Prisma",
-    ],
-    gradient:
-      "from-[#d4a574] to-[#b8834a]",
+    techs: ["Next.js", "TypeScript", "Tailwind", "Stripe API", "Prisma"],
+    gradient: "from-[#d4a574] to-[#b8834a]",
     featured: true,
+    live: "https://e-commerce-phi-two-42.vercel.app/",
+    github: "https://github.com/your-repo",
+    image: "/projects/store.png",
   },
   {
-    title: "TaskFlow Dashboard",
+    title: "Empire-strategist",
     type: "Web App",
     label: "SaaS",
     desc: "A productivity dashboard with drag-and-drop task management and real-time collaboration.",
-    techs: [
-      "React",
-      "Redux",
-      "Socket.io",
-    ],
-    gradient:
-      "from-[#7d5228] to-[#5e3b1a]",
+    techs: ["React", "Redux", "Socket.io"],
+    gradient: "from-[#7d5228] to-[#5e3b1a]",
+    live: "https://empire-strategist-tester.vercel.app/",
+    github: "#",
+    image: "/projects/taskflow.png",
   },
   {
-    title: "Luminary Agency Site",
+    title: "Alma Mater college",
     type: "Website",
     label: "Landing",
     desc: "A premium agency website with smooth animations, parallax scrolling and CMS integration.",
-    techs: [
-      "Next.js",
-      "Framer Motion",
-      "Sanity CMS",
-    ],
-    gradient:
-      "from-[#e8c9a0] to-[#d4a574]",
+    techs: ["Next.js", "Framer Motion", "Sanity CMS"],
+    gradient: "from-[#e8c9a0] to-[#d4a574]",
+    live: "https://alma-mater-lilac.vercel.app/",
+    github: "#",
+    image: "/projects/agency.png",
   },
   {
-    title: "WalletWise — Finance Tracker",
+    title: "Gym center",
     type: "Mobile-First",
     label: "FinTech",
     desc: "A finance tracker with charts, budgeting system and responsive mobile-first experience.",
-    techs: [
-      "React",
-      "Chart.js",
-      "Firebase",
-      "SCSS",
-      "PWA",
-    ],
-    gradient:
-      "from-[#5e3b1a] to-[#3e2610]",
+    techs: ["React", "Chart.js", "Firebase", "SCSS", "PWA"],
+    gradient: "from-[#5e3b1a] to-[#3e2610]",
     featured: true,
+    live: "https://gym-center-zae6.vercel.app/",
+    github: "",
+    image: "/projects/walletwise.png",
   },
 ];
 
@@ -110,17 +98,13 @@ export default function Projects() {
           </p>
 
           <h2 className="font-serif text-[clamp(2.4rem,5vw,4rem)] font-black leading-tight text-[#1e1208] mb-5">
-            Selected{" "}
-            <span className="italic text-[#9a6a35]">
-              Work
-            </span>
+            Selected <span className="italic text-[#9a6a35]">Work</span>
           </h2>
         </div>
 
         <p className="text-[#5e3b1a] text-lg leading-8 max-w-[500px] font-light">
-          A showcase of projects that demonstrate my
-          creativity, frontend engineering skills and
-          ability to craft premium digital experiences.
+          A showcase of projects that demonstrate my creativity, frontend
+          engineering skills and ability to craft premium digital experiences.
         </p>
       </motion.div>
 
@@ -140,9 +124,7 @@ export default function Projects() {
               y: -12,
             }}
             className={`group overflow-hidden rounded-[30px] border border-[#e8c9a0] bg-white shadow-sm hover:shadow-2xl transition-all duration-500 ${
-              project.featured
-                ? "lg:col-span-2"
-                : ""
+              project.featured ? "lg:col-span-2" : ""
             }`}
           >
             {/* THUMBNAIL */}
