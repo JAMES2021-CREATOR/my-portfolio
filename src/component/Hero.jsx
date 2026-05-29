@@ -65,11 +65,17 @@ export default function Hero() {
       {/* RIGHT VISUAL */}
       <div className="relative flex justify-center mt-12 md:mt-0 animate-slideInRight">
         {/* MAIN AVATAR */}
-        <div className="w-[320px] h-[420px] rounded-[120px_120px_80px_80px] bg-[#f5e6d3] border-2 border-[#e8c9a0] flex items-center justify-center relative shadow-xl">
-          <span className="text-6xl font-bold text-[#b8834a]">DJO</span>
+        <div className="w-[320px] h-[420px] rounded-[120px_120px_80px_80px] bg-[#f5e6d3] border-2 border-[#e8c9a0] flex items-center justify-center relative shadow-xl overflow-hidden">
+          {/* Image */}
+          <img
+            src="images/image1.jpeg"
+            alt=""
+            className="w-full h-full object-cover"
+          />
 
+          {/* Name tag */}
           <div className="absolute bottom-6 px-4 py-1 rounded-full bg-white border text-sm text-[#7d5228]">
-            Dahunsi james .o
+            Dahunsi James .O
           </div>
         </div>
 

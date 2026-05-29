@@ -164,27 +164,12 @@ export default function Footer() {
         viewport={{ once: true }}
         className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-5 pt-8"
       >
-        <p className="text-[#9a6a35] text-sm text-center md:text-left">
+        <p className="text-[#9a6a35] text-sm text-center md:text-center">
           © 2026 Dahunsi James Opeyemi. All rights reserved.
         </p>
 
         <div className="flex items-center gap-3 text-sm text-[#b8834a]">
-          <span>Built with</span>
-
-          <motion.span
-            animate={{
-              scale: [1, 1.2, 1],
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-            }}
-            className="text-red-400"
-          >
-            ❤
-          </motion.span>
-
-          <span>using React & Framer Motion</span>
+          
         </div>
       </motion.div>
     </footer>

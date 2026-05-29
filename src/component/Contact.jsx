@@ -6,26 +6,26 @@ const contactItems = [
   {
     icon: "📧",
     label: "Email",
-    value: "dahunsi.james@email.com",
-    href: "mailto:dahunsi.james@email.com",
+    value: "dahunsijames2021@gmail.com",
+    href: "mailto:dahunsijames2021@gmail.com",
   },
   {
     icon: "📞",
     label: "Phone",
-    value: "+234 800 000 0000",
-    href: "tel:+2348000000000",
+    value: "+234 8051 388 846",
+    href: "tel:+2348051388846",
   },
   {
     icon: "💼",
     label: "LinkedIn",
-    value: "linkedin.com/in/dahunsi-james",
-    href: "#",
+    value: "www.linkedin.com/dahunsi-james",
+    href: "https://www.linkedin.com/in/dahunsi-james-127472187",
   },
   {
     icon: "🐙",
     label: "GitHub",
     value: "github.com/dahunsi-james",
-    href: "#",
+    href: "https://github.com/JAMES2021-CREATOR",
   },
 ];
 
@@ -69,15 +69,13 @@ export default function Contact() {
 
           <h2 className="font-serif text-[clamp(2.5rem,5vw,4.2rem)] font-black leading-tight text-[#1e1208] mb-6">
             Let’s Build{" "}
-            <span className="italic text-[#9a6a35]">
-              Something Great
-            </span>
+            <span className="italic text-[#9a6a35]">Something Great</span>
           </h2>
 
           <p className="text-[#5e3b1a] text-lg leading-8 font-light max-w-[520px] mb-12">
-            Have a project in mind or looking for a frontend
-            developer to bring your ideas to life? I’m always
-            open to exciting collaborations and opportunities.
+            Have a project in mind or looking for a frontend developer to bring
+            your ideas to life? I’m always open to exciting collaborations and
+            opportunities.
           </p>
 
           {/* CONTACT ITEMS */}
@@ -136,9 +134,12 @@ export default function Contact() {
         >
           {/* Form Glow */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#f5e6d3]/40 to-[#d4a574]/10 blur-3xl rounded-[40px]" />
-
           <div className="relative bg-[#faf7f2]/90 backdrop-blur-xl border border-[#f5e6d3] rounded-[32px] p-8 lg:p-10 shadow-xl">
-            <form className="space-y-6">
+            <form
+              action="https://formspree.io/f/xqejjdkz"
+              method="POST"
+              className="space-y-6"
+            >
               {/* Names */}
               <div className="grid md:grid-cols-2 gap-5">
                 <div>
@@ -148,7 +149,9 @@ export default function Contact() {
 
                   <input
                     type="text"
-                    placeholder="John"
+                    name="firstName"
+                    placeholder="James"
+                    required
                     className="w-full px-5 py-4 rounded-2xl border border-[#e8c9a0] bg-white outline-none focus:border-[#9a6a35] transition"
                   />
                 </div>
@@ -160,7 +163,9 @@ export default function Contact() {
 
                   <input
                     type="text"
-                    placeholder="Doe"
+                    name="lastName"
+                    placeholder="Dahunsi"
+                    required
                     className="w-full px-5 py-4 rounded-2xl border border-[#e8c9a0] bg-white outline-none focus:border-[#9a6a35] transition"
                   />
                 </div>
@@ -174,7 +179,9 @@ export default function Contact() {
 
                 <input
                   type="email"
-                  placeholder="john@example.com"
+                  name="email"
+                  placeholder="james@.com"
+                  required
                   className="w-full px-5 py-4 rounded-2xl border border-[#e8c9a0] bg-white outline-none focus:border-[#9a6a35] transition"
                 />
               </div>
@@ -187,7 +194,9 @@ export default function Contact() {
 
                 <input
                   type="text"
+                  name="subject"
                   placeholder="Project Collaboration"
+                  required
                   className="w-full px-5 py-4 rounded-2xl border border-[#e8c9a0] bg-white outline-none focus:border-[#9a6a35] transition"
                 />
               </div>
@@ -200,19 +209,26 @@ export default function Contact() {
 
                 <textarea
                   rows="6"
+                  name="message"
                   placeholder="Tell me about your project..."
+                  required
                   className="w-full px-5 py-4 rounded-2xl border border-[#e8c9a0] bg-white outline-none focus:border-[#9a6a35] transition resize-none"
                 />
               </div>
 
+              {/* Hidden Formspree Fields */}
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Portfolio Contact Form Submission"
+              />
+
+              <input type="hidden" name="_captcha" value="false" />
+
               {/* Button */}
               <motion.button
-                whileHover={{
-                  scale: 1.03,
-                }}
-                whileTap={{
-                  scale: 0.97,
-                }}
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
                 type="submit"
                 className="w-full py-5 rounded-2xl bg-gradient-to-r from-[#5e3b1a] to-[#7d5228] text-white font-semibold text-base shadow-lg hover:shadow-2xl transition-all duration-300"
               >

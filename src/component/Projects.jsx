@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "ShopHaven — E-Commerce Platform",
+    title: "DAHUNSI_STORE",
     type: "Featured Project",
     label: "E-Commerce",
     desc: "A fully responsive online store with cart management, Stripe payments, product filtering, and admin dashboard functionality.",
