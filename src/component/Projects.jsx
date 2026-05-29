@@ -188,31 +188,33 @@ export default function Projects() {
 
               {/* LINKS */}
               <div className="flex flex-wrap gap-4">
-                <motion.a
-                  whileHover={{
-                    scale: 1.05,
-                  }}
-                  whileTap={{
-                    scale: 0.95,
-                  }}
-                  href="#"
-                  className="px-5 py-3 rounded-full bg-[#5e3b1a] text-white text-sm font-medium"
-                >
-                  ↗ Live Demo
-                </motion.a>
+                {/* LIVE DEMO */}
+                {project.live && (
+                  <motion.a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-5 py-3 rounded-full bg-[#5e3b1a] text-white text-sm font-medium"
+                  >
+                    ↗ Live Demo
+                  </motion.a>
+                )}
 
-                <motion.a
-                  whileHover={{
-                    scale: 1.05,
-                  }}
-                  whileTap={{
-                    scale: 0.95,
-                  }}
-                  href="#"
-                  className="px-5 py-3 rounded-full border border-[#d4a574] text-[#5e3b1a] text-sm font-medium hover:bg-[#f5e6d3] transition duration-300"
-                >
-                  ⌥ GitHub
-                </motion.a>
+                {/* GITHUB */}
+                {project.github && (
+                  <motion.a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-5 py-3 rounded-full border border-[#d4a574] text-[#5e3b1a] text-sm font-medium hover:bg-[#f5e6d3] transition duration-300"
+                  >
+                    ⌥ GitHub
+                  </motion.a>
+                )}
               </div>
             </div>
           </motion.div>
