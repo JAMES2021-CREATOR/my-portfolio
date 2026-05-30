@@ -40,12 +40,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
 
         {/* Logo */}
-        <a
-          href="#hero"
-          className="text-2xl font-black tracking-tight text-[#5e3b1a]"
-        >
-          DJO<span className="text-[#b8834a]">.</span>
-        </a>
+       <h1>
+        <img className="w-13 md:w-15" src="images/logo.png" alt="" srcset="" />
+       </h1>
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex items-center gap-10">

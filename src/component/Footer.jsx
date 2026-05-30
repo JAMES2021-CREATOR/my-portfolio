@@ -6,7 +6,7 @@ const socials = [
   {
     name: "GitHub",
     short: "GH",
-    href: "#",
+    href:  "https://github.com/your-repo",
   },
   {
     name: "LinkedIn",
@@ -52,9 +52,9 @@ export default function Footer() {
           }}
           viewport={{ once: true }}
         >
-          <h2 className="font-serif text-5xl font-black text-[#f5e6d3] mb-5">
-            DJO<span className="text-[#b8834a]">.</span>
-          </h2>
+         <h1>
+        <img className="w-13 md:w-15" src="images/logo1.png" alt="" srcset="" />
+       </h1>
 
           <p className="text-[#d4a574] leading-8 max-w-[340px] font-light">
             Crafting modern, premium and high-performance
